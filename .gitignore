@@ -1,0 +1,10 @@
+.DS_Store
+
+# VIM
+*.swp
+*.swo
+*~
+
+# Compiled
+*.o
+server
