@@ -13,7 +13,7 @@
  */
 void statecpy(struct instrument_buttons *dst, byte *buffer) {
     dst->colors = buffer[0];
-    dst->service_buttons = buffer[1];
+    dst->service = buffer[1];
     dst->arrows = buffer[2];
     dst->whammy = buffer[5] == 0x7f ? dst->whammy : buffer[5];
     dst->multi_switch = buffer[6] == 0x7f ? dst->multi_switch : buffer[6];
@@ -28,7 +28,7 @@ void statecpy(struct instrument_buttons *dst, byte *buffer) {
  */
 bool statecmp(struct instrument_buttons dst, byte *buffer) {
     return (dst.colors == buffer[0]
-        && dst.service_buttons == buffer[1]
+        && dst.service == buffer[1]
         && dst.arrows == buffer[2]
         && (dst.whammy == buffer[5] || buffer[5] == 0x7f)
         && (dst.multi_switch == buffer[6] || buffer[6] == 0x7f));
@@ -46,7 +46,7 @@ bool statecmp(struct instrument_buttons dst, byte *buffer) {
 int poll_instrument(struct instrument_usb *device) {
     // Try to reconnect device when we lose connection.
     if ((device->hid == NULL) 
-        && connect_instrument(device->device_id, &device->hid) < 0) 
+        && connect_instrument(device->product_id, &device->hid) < 0) 
     {
         return 0;
     }
@@ -75,21 +75,21 @@ int poll_instrument(struct instrument_usb *device) {
 }
 
 /**
- * Connect device by searching USBs with a matching device_id
+ * Connect device by searching USBs with a matching product_id
  *
- * @param device_id the device_id to locate and connect.
+ * @param product_id the product_id to locate and connect.
  * @param device this reference will contained the connected device or NULL.
  * @return -1 if an error occurred or 0 if device was connected.
  */
-int connect_instrument(int device_id, hid_device **device) {
-    printf("Trying to connect device id: 0x%.4x\n", device_id);
-    *device = hid_open(SONY_VENDOR_ID, device_id, NULL);
+int connect_instrument(int product_id, hid_device **device) {
+    printf("Trying to connect device id: 0x%.4x\n", product_id);
+    *device = hid_open(SONY_VENDOR_ID, product_id, NULL);
     if (*device == NULL) {
-        printf("Error reading device id 0x%.4x\n", device_id);
+        printf("Error reading device id 0x%.4x\n", product_id);
         return -1;
     }
 
-    printf("Device id: 0x%.3x connected\n", device_id);
+    printf("Device id: 0x%.3x connected\n", product_id);
     hid_set_nonblocking(*device, 1);
     return 0;
 }
@@ -119,9 +119,9 @@ void dump_instrument(struct instrument_usb device) {
     char buffer[33];
     struct instrument_buttons buttons = device.buttons;
 
-    printf("Instrument [id: %d]. Buttons:\n", device.device_id);
+    printf("Instrument [id: %d]. Buttons:\n", device.unique_id);
     printf("\tcolor:\t\t%s\n", bin(buttons.colors, buffer));
-    printf("\tservice:\t%s\n", bin(buttons.service_buttons, buffer));
+    printf("\tservice:\t%s\n", bin(buttons.service, buffer));
     printf("\tarrows:\t\t%s\n", bin(buttons.arrows, buffer));
     printf("\twhammy bar:\t%d\n", buttons.whammy);
     printf("\tmulti switch:\t%d\n", buttons.multi_switch);
