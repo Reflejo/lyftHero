@@ -3,7 +3,7 @@ extension ChallengeViewController {
 
     func doLevel1(instrument: Instrument) throws {
         var session = self.sessionByDevice[instrument.deviceID] ?? Session(level: 1)
-        let mask = instrument.colorsMask & 0b1111111
+        let mask = instrument.physicialOrderedMask
 
         if instrument.buttons.service & ButtonMask.Start != 0 {
             let letters = session.data.map { "\(UnicodeScalar($0))" }

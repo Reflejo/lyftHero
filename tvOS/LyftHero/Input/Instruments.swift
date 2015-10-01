@@ -37,12 +37,12 @@ This is the raw masks we get from the USB. Don't use this along with colorMask b
 */
 struct ButtonMask {
     // Color buttons masks
-    private static let Green: UInt8 = 0b10
-    private static let Red: UInt8 = 0b100
-    private static let Yellow: UInt8 = 0b1000
-    private static let Blue: UInt8 = 0b1
-    private static let Orange: UInt8 = 0b10000
-    private static let Modifier: UInt8 = 0b1000000
+    static let Green: UInt8 = 0b10
+    static let Red: UInt8 = 0b100
+    static let Yellow: UInt8 = 0b1000
+    static let Blue: UInt8 = 0b1
+    static let Orange: UInt8 = 0b10000
+    static let Modifier: UInt8 = 0b1000000
 
     // Service buttons masks
     static let Select: UInt8 = 0b1
@@ -70,7 +70,7 @@ struct Instrument {
     var buttons = Buttons()
 
     /// A mask composed with the bits of the guitar colors sorted following the actual buttons' ubication.
-    var colorsMask: UInt8 {
+    var physicialOrderedMask: UInt8 {
         let getBit = { (color: UInt8) -> UInt8 in
             (self.buttons.colors & color) == 0 ? 0 : 1
         }

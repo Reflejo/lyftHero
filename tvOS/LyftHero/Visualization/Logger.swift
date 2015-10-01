@@ -22,7 +22,7 @@ struct Logger {
     - instrument: An instrument value that contains the current state and deviceID
     */
     static func log(message: String, instrument: Instrument) {
-        let mask = String(instrument.colorsMask, radix: 2)
+        let mask = String(instrument.physicialOrderedMask, radix: 2)
         let session = AppDelegate.challengeViewController?.sessionByDevice[instrument.deviceID]
         let nickname = session?.user?.name ?? "new"
 
