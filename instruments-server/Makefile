@@ -1,7 +1,13 @@
 PROG = server
 
+ifeq ($(shell uname), Linux)
+	LDHIDFLAG = -lhidapi-hidraw
+else
+	LDHIDFLAG = -lhidapi
+endif
+
 CC = gcc
-LDFLAGS = -L/usr/local/lib/ -lhidapi
+LDFLAGS = -L/usr/local/lib/ $(LDHIDFLAG)
 CFLAGS = -O2 -Wall -DLINUX -I/usr/local/include/hidapi/ -g -DDEBUG
 
 OBJS = usblayer.o server.o
