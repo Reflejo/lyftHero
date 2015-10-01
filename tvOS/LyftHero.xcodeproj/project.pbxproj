@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		265CD5291BBD14D600556D87 /* G.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 265CD5241BBD14D600556D87 /* G.mp3 */; };
+		265CD52A1BBD14D600556D87 /* E.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 265CD5251BBD14D600556D87 /* E.mp3 */; };
+		265CD52B1BBD14D600556D87 /* D.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 265CD5261BBD14D600556D87 /* D.mp3 */; };
+		265CD52C1BBD14D600556D87 /* B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 265CD5271BBD14D600556D87 /* B.mp3 */; };
+		265CD52D1BBD14D600556D87 /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 265CD5281BBD14D600556D87 /* A.mp3 */; };
+		265E32EB1BB810E900C8B7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E32EA1BB810E900C8B7C2 /* AppDelegate.swift */; };
+		265E32ED1BB810E900C8B7C2 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E32EC1BB810E900C8B7C2 /* ChallengeViewController.swift */; };
+		265E32F01BB810E900C8B7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265E32EE1BB810E900C8B7C2 /* Main.storyboard */; };
+		265E32F21BB810E900C8B7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265E32F11BB810E900C8B7C2 /* Assets.xcassets */; };
+		26FB8D801BB8F56000B04409 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D7F1BB8F56000B04409 /* InputManager.swift */; };
+		26FB8D821BB8F57100B04409 /* NSInputStream+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */; };
+		26FB8D851BB8F5F400B04409 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D841BB8F5F400B04409 /* Logger.swift */; };
+		26FB8D8C1BB8F6FE00B04409 /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D881BB8F6FE00B04409 /* Instruments.swift */; };
+		26FB8D921BB8F70C00B04409 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D901BB8F70C00B04409 /* Models.swift */; };
+		26FB8D931BB8F70C00B04409 /* GuitarChallenge+Level1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D911BB8F70C00B04409 /* GuitarChallenge+Level1.swift */; };
+		26FB8D951BB910CD00B04409 /* LoggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D941BB910CD00B04409 /* LoggerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		265CD5241BBD14D600556D87 /* G.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = G.mp3; sourceTree = "<group>"; };
+		265CD5251BBD14D600556D87 /* E.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = E.mp3; sourceTree = "<group>"; };
+		265CD5261BBD14D600556D87 /* D.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = D.mp3; sourceTree = "<group>"; };
+		265CD5271BBD14D600556D87 /* B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B.mp3; sourceTree = "<group>"; };
+		265CD5281BBD14D600556D87 /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
+		265E32E71BB810E900C8B7C2 /* LyftHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyftHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		265E32EA1BB810E900C8B7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		265E32EC1BB810E900C8B7C2 /* ChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewController.swift; sourceTree = "<group>"; };
+		265E32EF1BB810E900C8B7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		265E32F11BB810E900C8B7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		265E32F31BB810E900C8B7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FB8D7F1BB8F56000B04409 /* InputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSInputStream+Extras.swift"; sourceTree = "<group>"; };
+		26FB8D841BB8F5F400B04409 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		26FB8D881BB8F6FE00B04409 /* Instruments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
+		26FB8D901BB8F70C00B04409 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		26FB8D911BB8F70C00B04409 /* GuitarChallenge+Level1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GuitarChallenge+Level1.swift"; sourceTree = "<group>"; };
+		26FB8D941BB910CD00B04409 /* LoggerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerView.swift; sourceTree = "<group>"; };
+		79C4BF1E131010AA2017D97F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B79386146223025800AB6703 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F38117713F896EFA427EE8B8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		265CD5221BBD14B300556D87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				265CD5231BBD14BB00556D87 /* Sounds */,
+				265E32EE1BB810E900C8B7C2 /* Main.storyboard */,
+				265E32F11BB810E900C8B7C2 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		265CD5231BBD14BB00556D87 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				265CD5241BBD14D600556D87 /* G.mp3 */,
+				265CD5251BBD14D600556D87 /* E.mp3 */,
+				265CD5261BBD14D600556D87 /* D.mp3 */,
+				265CD5271BBD14D600556D87 /* B.mp3 */,
+				265CD5281BBD14D600556D87 /* A.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		265E32DE1BB810E900C8B7C2 = {
+			isa = PBXGroup;
+			children = (
+				265E32E91BB810E900C8B7C2 /* LyftHero */,
+				265E32E81BB810E900C8B7C2 /* Products */,
+				E27386B2BAEEBB1939F10FC0 /* Pods */,
+				C1C6983AE027A91B161A349A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		265E32E81BB810E900C8B7C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				265E32E71BB810E900C8B7C2 /* LyftHero.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		265E32E91BB810E900C8B7C2 /* LyftHero */ = {
+			isa = PBXGroup;
+			children = (
+				26FB8D8F1BB8F70400B04409 /* Challenges */,
+				26FB8D831BB8F5EC00B04409 /* Visualization */,
+				26FB8D7E1BB8F55500B04409 /* Input */,
+				265E32EA1BB810E900C8B7C2 /* AppDelegate.swift */,
+				265CD5221BBD14B300556D87 /* Resources */,
+				265E32F31BB810E900C8B7C2 /* Info.plist */,
+			);
+			path = LyftHero;
+			sourceTree = "<group>";
+		};
+		26FB8D7E1BB8F55500B04409 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				26FB8D7F1BB8F56000B04409 /* InputManager.swift */,
+				26FB8D881BB8F6FE00B04409 /* Instruments.swift */,
+				26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */,
+			);
+			name = Input;
+			sourceTree = "<group>";
+		};
+		26FB8D831BB8F5EC00B04409 /* Visualization */ = {
+			isa = PBXGroup;
+			children = (
+				26FB8D901BB8F70C00B04409 /* Models.swift */,
+				26FB8D841BB8F5F400B04409 /* Logger.swift */,
+				26FB8D941BB910CD00B04409 /* LoggerView.swift */,
+				265E32EC1BB810E900C8B7C2 /* ChallengeViewController.swift */,
+			);
+			name = Visualization;
+			sourceTree = "<group>";
+		};
+		26FB8D8F1BB8F70400B04409 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				26FB8D911BB8F70C00B04409 /* GuitarChallenge+Level1.swift */,
+			);
+			name = Challenges;
+			sourceTree = "<group>";
+		};
+		C1C6983AE027A91B161A349A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38117713F896EFA427EE8B8 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E27386B2BAEEBB1939F10FC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B79386146223025800AB6703 /* Pods.debug.xcconfig */,
+				79C4BF1E131010AA2017D97F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		265E32E61BB810E900C8B7C2 /* LyftHero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 265E330C1BB810E900C8B7C2 /* Build configuration list for PBXNativeTarget "LyftHero" */;
+			buildPhases = (
+				265E32E31BB810E900C8B7C2 /* Sources */,
+				265E32E51BB810E900C8B7C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LyftHero;
+			productName = LyftHero;
+			productReference = 265E32E71BB810E900C8B7C2 /* LyftHero.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		265E32DF1BB810E900C8B7C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Lyft;
+				TargetAttributes = {
+					265E32E61BB810E900C8B7C2 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = S96SGE84F3;
+					};
+				};
+			};
+			buildConfigurationList = 265E32E21BB810E900C8B7C2 /* Build configuration list for PBXProject "LyftHero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 265E32DE1BB810E900C8B7C2;
+			productRefGroup = 265E32E81BB810E900C8B7C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				265E32E61BB810E900C8B7C2 /* LyftHero */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		265E32E51BB810E900C8B7C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265CD52A1BBD14D600556D87 /* E.mp3 in Resources */,
+				265CD52D1BBD14D600556D87 /* A.mp3 in Resources */,
+				265CD52B1BBD14D600556D87 /* D.mp3 in Resources */,
+				265CD5291BBD14D600556D87 /* G.mp3 in Resources */,
+				265CD52C1BBD14D600556D87 /* B.mp3 in Resources */,
+				265E32F21BB810E900C8B7C2 /* Assets.xcassets in Resources */,
+				265E32F01BB810E900C8B7C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		265E32E31BB810E900C8B7C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FB8D8C1BB8F6FE00B04409 /* Instruments.swift in Sources */,
+				26FB8D851BB8F5F400B04409 /* Logger.swift in Sources */,
+				26FB8D921BB8F70C00B04409 /* Models.swift in Sources */,
+				26FB8D931BB8F70C00B04409 /* GuitarChallenge+Level1.swift in Sources */,
+				26FB8D801BB8F56000B04409 /* InputManager.swift in Sources */,
+				26FB8D951BB910CD00B04409 /* LoggerView.swift in Sources */,
+				265E32ED1BB810E900C8B7C2 /* ChallengeViewController.swift in Sources */,
+				265E32EB1BB810E900C8B7C2 /* AppDelegate.swift in Sources */,
+				26FB8D821BB8F57100B04409 /* NSInputStream+Extras.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		265E32EE1BB810E900C8B7C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				265E32EF1BB810E900C8B7C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		265E330B1BB810E900C8B7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		265E330E1BB810E900C8B7C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LyftHero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyft.LyftHero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26FB8D7C1BB8DDAF00B04409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		26FB8D7D1BB8DDAF00B04409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = LyftHero/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyft.LyftHero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		265E32E21BB810E900C8B7C2 /* Build configuration list for PBXProject "LyftHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265E330B1BB810E900C8B7C2 /* Release */,
+				26FB8D7C1BB8DDAF00B04409 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		265E330C1BB810E900C8B7C2 /* Build configuration list for PBXNativeTarget "LyftHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				265E330E1BB810E900C8B7C2 /* Release */,
+				26FB8D7D1BB8DDAF00B04409 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 265E32DF1BB810E900C8B7C2 /* Project object */;
+}
