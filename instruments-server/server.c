@@ -26,6 +26,9 @@ void start_server(int port) {
     fd = socket(AF_INET, SOCK_STREAM, 0);
     memset(&bind_address, 0, sizeof(bind_address));
 
+    // Ignore SIGPIPE triggered by a broken pipe (just rely on the response)
+    signal(SIGPIPE, SIG_IGN);
+
     // Bind to 0.0.0.0:SOCKET_PORT
     bind_address.sin_family = AF_INET;
     bind_address.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -78,10 +81,10 @@ bool pipe_device_to_socket(struct instrument_usb *instrument, int socket) {
             instrument->buttons.arrows, instrument->buttons.whammy, 
             instrument->buttons.multi_switch
         };
-        return send(socket, buffer, 6, 0);
+        return send(socket, buffer, 6, 0) > 0;
     }
 
-    return 1;
+    return true;
 }
 
 int main(int argc, char *argv[]) {

@@ -8,3 +8,6 @@ OBJS = usblayer.o server.o
 
 all: $(OBJS)
 	$(CC) -o $(PROG) $(OBJS) $(LDFLAGS)
+
+clean: 
+	rm -rf $(OBJS) $(PROG)
