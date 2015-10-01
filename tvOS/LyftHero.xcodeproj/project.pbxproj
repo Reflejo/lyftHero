@@ -57,7 +57,7 @@
 				265E32EE1BB810E900C8B7C2 /* Main.storyboard */,
 				265E32F11BB810E900C8B7C2 /* Assets.xcassets */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		265CD5231BBD14BB00556D87 /* Sounds */ = {
@@ -69,7 +69,7 @@
 				265CD5271BBD14D600556D87 /* B.mp3 */,
 				265CD5281BBD14D600556D87 /* A.mp3 */,
 			);
-			name = Sounds;
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		265E32DE1BB810E900C8B7C2 = {
@@ -96,8 +96,8 @@
 				26FB8D8F1BB8F70400B04409 /* Challenges */,
 				26FB8D831BB8F5EC00B04409 /* Visualization */,
 				26FB8D7E1BB8F55500B04409 /* Input */,
-				265E32EA1BB810E900C8B7C2 /* AppDelegate.swift */,
 				265CD5221BBD14B300556D87 /* Resources */,
+				265E32EA1BB810E900C8B7C2 /* AppDelegate.swift */,
 				265E32F31BB810E900C8B7C2 /* Info.plist */,
 			);
 			path = LyftHero;
@@ -110,7 +110,7 @@
 				26FB8D881BB8F6FE00B04409 /* Instruments.swift */,
 				26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */,
 			);
-			name = Input;
+			path = Input;
 			sourceTree = "<group>";
 		};
 		26FB8D831BB8F5EC00B04409 /* Visualization */ = {
@@ -121,7 +121,7 @@
 				26FB8D941BB910CD00B04409 /* LoggerView.swift */,
 				265E32EC1BB810E900C8B7C2 /* ChallengeViewController.swift */,
 			);
-			name = Visualization;
+			path = Visualization;
 			sourceTree = "<group>";
 		};
 		26FB8D8F1BB8F70400B04409 /* Challenges */ = {
@@ -129,7 +129,7 @@
 			children = (
 				26FB8D911BB8F70C00B04409 /* GuitarChallenge+Level1.swift */,
 			);
-			name = Challenges;
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 		C1C6983AE027A91B161A349A /* Frameworks */ = {
@@ -244,6 +244,7 @@
 				265E32EF1BB810E900C8B7C2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
