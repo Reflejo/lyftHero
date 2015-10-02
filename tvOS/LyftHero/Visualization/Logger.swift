@@ -11,7 +11,7 @@ struct Logger {
     */
     static func log(message: String) {
         let loggerViews = AppDelegate.challengeViewController?.loggerViews ?? []
-        loggerViews.forEach { $0.appendText(message) }
+        loggerViews.forEach { $0.appendTextAnimated(message) }
         print(message)
     }
 
@@ -39,7 +39,7 @@ struct Logger {
         }
 
         let loggerView = loggerViews[loggerIndex]
-        loggerView.appendText(message)
+        loggerView.appendTextAnimated(message)
         print(message)
     }
 }

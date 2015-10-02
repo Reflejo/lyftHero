@@ -3,6 +3,17 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="VT323-Regular.ttf">
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+            <string>VT323-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Challenge View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,14 +27,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JPz-39-OFH">
-                                <rect key="frame" x="0.0" y="760" width="1920" height="320"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPz-39-OFH">
+                                <rect key="frame" x="0.0" y="635" width="1920" height="450"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-B3-OkO" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="640" height="320"/>
-                                        <color key="backgroundColor" red="0.12640629431491829" green="0.15176311163038911" blue="0.17741496313672922" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="_" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J54-B3-OkO" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="637" height="450"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="linkedDeviceID">
@@ -31,11 +42,60 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHf-H9-f27" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
-                                        <rect key="frame" x="640" y="0.0" width="640" height="320"/>
-                                        <color key="backgroundColor" red="0.1264062943" green="0.1517631116" blue="0.17741496309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwR-xw-pal" userLabel="| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |">
+                                        <rect key="frame" x="637" y="0.0" width="5" height="450"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="5" id="BrR-vy-oVn"/>
+                                        </constraints>
+                                        <string key="text">.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+</string>
+                                        <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="17"/>
+                                        <color key="textColor" red="0.36862745098039218" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" editable="NO" text="_" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHf-H9-f27" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
+                                        <rect key="frame" x="642" y="0.0" width="637" height="450"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="linkedDeviceID">
@@ -43,11 +103,57 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCr-9h-bAL" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
-                                        <rect key="frame" x="1280" y="0.0" width="640" height="320"/>
-                                        <color key="backgroundColor" red="0.1264062943" green="0.1517631116" blue="0.17741496309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-k5-eg5">
+                                        <rect key="frame" x="1279" y="0.0" width="5" height="450"/>
+                                        <string key="text">.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+</string>
+                                        <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="17"/>
+                                        <color key="textColor" red="0.36862745098039218" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="_" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCr-9h-bAL" customClass="LoggerView" customModule="LyftHero" customModuleProvider="target">
+                                        <rect key="frame" x="1284" y="0.0" width="636" height="450"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.36862745099999999" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="linkedDeviceID">
@@ -57,15 +163,42 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="Lgu-Rv-QCg"/>
+                                    <constraint firstAttribute="height" constant="450" id="Lgu-Rv-QCg"/>
+                                    <constraint firstItem="yY5-k5-eg5" firstAttribute="width" secondItem="GwR-xw-pal" secondAttribute="width" id="V8Z-mo-TaX"/>
+                                    <constraint firstItem="sHf-H9-f27" firstAttribute="width" secondItem="J54-B3-OkO" secondAttribute="width" id="syH-cY-Bpo"/>
+                                    <constraint firstItem="dCr-9h-bAL" firstAttribute="width" secondItem="J54-B3-OkO" secondAttribute="width" id="uJh-DI-022"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-PB-CKh">
+                                <rect key="frame" x="0.0" y="621" width="1920" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </string>
+                                <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="17"/>
+                                <color key="textColor" red="0.36862745098039218" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwc-dK-Xvc">
+                                <rect key="frame" x="27" y="28" width="207" height="175"/>
+                                <string key="text"> _        __ _   
+| |_   _ / _| |_ 
+| | | | | |_| __|
+| | |_| |  _| |_ 
+|_|\__, |_|  \__|
+   |___/         
+</string>
+                                <fontDescription key="fontDescription" name="VT323-Regular" family="VT323" pointSize="25"/>
+                                <color key="textColor" red="0.12842775840000001" green="0.52004440350000003" blue="0.13517774790000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JPz-39-OFH" firstAttribute="top" secondItem="Xrz-PB-CKh" secondAttribute="bottom" constant="-3" id="3s3-Ip-jel"/>
                             <constraint firstAttribute="trailing" secondItem="JPz-39-OFH" secondAttribute="trailing" id="OvI-bF-2Ea"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JPz-39-OFH" secondAttribute="bottom" id="aPP-RZ-REL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JPz-39-OFH" secondAttribute="bottom" constant="-5" id="aPP-RZ-REL"/>
                             <constraint firstItem="JPz-39-OFH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="krW-Du-gvE"/>
+                            <constraint firstItem="Xrz-PB-CKh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tqY-jw-SLD"/>
+                            <constraint firstAttribute="trailing" secondItem="Xrz-PB-CKh" secondAttribute="trailing" id="x35-4l-BQx"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="254" y="387"/>
+            <point key="canvasLocation" x="-254" y="375"/>
         </scene>
     </scenes>
 </document>

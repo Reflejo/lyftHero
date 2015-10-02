@@ -16,6 +16,7 @@
 		265E32ED1BB810E900C8B7C2 /* ChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E32EC1BB810E900C8B7C2 /* ChallengeViewController.swift */; };
 		265E32F01BB810E900C8B7C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265E32EE1BB810E900C8B7C2 /* Main.storyboard */; };
 		265E32F21BB810E900C8B7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265E32F11BB810E900C8B7C2 /* Assets.xcassets */; };
+		26EBB7121BBE3F550023F071 /* VT323-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EBB7111BBE3F550023F071 /* VT323-Regular.ttf */; };
 		26FB8D801BB8F56000B04409 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D7F1BB8F56000B04409 /* InputManager.swift */; };
 		26FB8D821BB8F57100B04409 /* NSInputStream+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */; };
 		26FB8D851BB8F5F400B04409 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FB8D841BB8F5F400B04409 /* Logger.swift */; };
@@ -37,6 +38,7 @@
 		265E32EF1BB810E900C8B7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		265E32F11BB810E900C8B7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265E32F31BB810E900C8B7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBB7111BBE3F550023F071 /* VT323-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VT323-Regular.ttf"; sourceTree = "<group>"; };
 		26FB8D7F1BB8F56000B04409 /* InputManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
 		26FB8D811BB8F57100B04409 /* NSInputStream+Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSInputStream+Extras.swift"; sourceTree = "<group>"; };
 		26FB8D841BB8F5F400B04409 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		265CD5221BBD14B300556D87 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				26EBB7111BBE3F550023F071 /* VT323-Regular.ttf */,
 				265CD5231BBD14BB00556D87 /* Sounds */,
 				265E32EE1BB810E900C8B7C2 /* Main.storyboard */,
 				265E32F11BB810E900C8B7C2 /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				265CD5291BBD14D600556D87 /* G.mp3 in Resources */,
 				265CD52C1BBD14D600556D87 /* B.mp3 in Resources */,
 				265E32F21BB810E900C8B7C2 /* Assets.xcassets in Resources */,
+				26EBB7121BBE3F550023F071 /* VT323-Regular.ttf in Resources */,
 				265E32F01BB810E900C8B7C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
