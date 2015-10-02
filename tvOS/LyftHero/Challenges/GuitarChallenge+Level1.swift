@@ -25,6 +25,9 @@ extension ChallengeViewController {
             if finalMask < 123 && finalMask > 64 {
                 Logger.log("Entered letter: \(UnicodeScalar(finalMask))", instrument: instrument)
                 session.data.append(Int(finalMask))
+            } else if finalMask == 8 {
+                Logger.log("Removed last letter")
+                session.data.removeLast()
             }
         }
 
